@@ -1,0 +1,23 @@
+.header {
+    background-color: #222;
+    color: white;
+    grid-column-end: 3;
+    grid-column-start: 1;
+    height: 170px;
+    padding: 20px;
+    text-align: center;
+}
+
+.header-title {
+    font-size: 1em;
+}
+  
+.logo {
+    animation: logo-spin infinite 20s linear;
+    height: 80px;
+}
+
+@keyframes logo-spin {
+    from { transform: rotate(0deg); }
+    to { transform: rotate(360deg); }
+}
