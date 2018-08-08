@@ -1,3 +1,4 @@
 .main {
+    grid-area: content;
     background: lightblue;
 }

@@ -1,21 +1,40 @@
-* {
+*, *:before, *:after {
   box-sizing: border-box;
-}
-
-html {
-  font-size: 18px;
-  font-family: Helvetica, Arial, sans-serif;
 }
 
 body {
   font-size: 1rem;
   margin: 0;
-  padding: 1rem;
+  padding: 0;
+  font-family: Helvetica, Arial, sans-serif;
 }
 
 .wrapper {
   display: grid;
-  grid-template-columns: 1fr 3fr;
-  grid-template-rows: 1fr 1fr;
-  
+  grid-gap: 5px;
+  grid-template-areas: 
+    "header"
+    "sidebar"
+    "content"
+    "footer";
+}
+
+@media (min-width: 500px) {
+  .wrapper {
+    grid-template-columns: 1fr 3fr;
+    grid-template-areas: 
+      "header  header"
+      "sidebar sidebar"
+      "content content"
+      "footer  footer";
+  }
+}
+@media (min-width: 700px) {
+  .wrapper {
+    grid-template-columns: 1fr 4fr 1fr;
+    grid-template-areas: 
+      "header  header  header"
+      "sidebar content content"
+      "footer  footer  footer"
+   }
 }
