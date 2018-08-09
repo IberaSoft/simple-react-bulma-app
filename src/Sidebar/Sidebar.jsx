@@ -6,7 +6,7 @@ import './Sidebar.css';
 class Sidebar extends Component {
     render() {
         return (
-            <section className="aside">
+            <section className="sidebar">
                 <Navigation className="navigation-vertical" />
             </section>
         );

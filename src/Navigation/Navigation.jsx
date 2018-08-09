@@ -8,9 +8,9 @@ class Navigation extends Component {
         return (
             <nav className={this.props.className}>
                 <ul>
-                    <li><Link /></li>
-                    <li><Link /></li>
-                    <li><Link /></li>
+                    <li><Link text="Text 1" /></li>
+                    <li><Link text="Text 2" disabled /></li>
+                    <li><Link text="Text 3" /></li>
                 </ul>
             </nav>
         );

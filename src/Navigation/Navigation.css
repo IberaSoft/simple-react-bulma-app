@@ -34,3 +34,17 @@
 .navigation-vertical li a:hover {
     background-color: #111111;
 }
+
+.navigation-horizontal li a.disabled,
+.navigation-vertical li a.disabled {
+    background-color: #333333;
+    color: gray;
+    cursor: default;
+    pointer-events: none;
+    text-decoration: none;
+}
+
+.navigation-horizontal li a.disabled:hover,
+.navigation-vertical li a.disabled:hover {
+    background-color: #333333;
+}

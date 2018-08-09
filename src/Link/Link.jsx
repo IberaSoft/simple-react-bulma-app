@@ -3,9 +3,10 @@ import React, { Component } from 'react';
 import './Link.css';
 
 class Link extends Component {
+
     render() {
         return (
-            <a href="">Text</a>
+            <a href="#" className={`${this.props.disabled ? 'disabled' : ''}`} title={this.props.text}>{this.props.text}</a>
         );
     }
 }
