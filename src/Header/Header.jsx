@@ -1,20 +1,18 @@
-import React, { Component } from 'react';
+import React from 'react';
 import logo from './../Assets/logo.svg';
 import Navigation from './../Navigation/Navigation';
 //css
 import './Header.css';
 
-class Header extends Component {
-    render() {
-        return (
-            <header className="header">
-                <div className="header-logo">
-                    <img src={logo} className="logo" alt="logo" />
-                </div>
-                <Navigation className="navigation-horizontal" />
-            </header>
-        );
-    }
+const Header = () => {
+    return (
+        <header className="header">
+            <div className="header-logo">
+                <img src={logo} className="logo" alt="logo" />
+            </div>
+            <Navigation className="navigation-horizontal" />
+        </header>
+    );
 }
 
 export default Header

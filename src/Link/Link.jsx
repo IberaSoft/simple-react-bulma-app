@@ -1,14 +1,11 @@
-import React, { Component } from 'react';
+import React from 'react';
 //css
 import './Link.css';
 
-class Link extends Component {
-
-    render() {
-        return (
-            <a href="#" className={`${this.props.disabled ? 'disabled' : ''}`} title={this.props.text}>{this.props.text}</a>
-        );
-    }
+const Link = (props) => {
+    return (
+        <a href="" className={`${props.disabled ? 'disabled' : ''}`} title={props.text}>{props.text}</a>
+    );
 }
 
 export default Link; 
