@@ -1,50 +1,7 @@
-.navigation-horizontal {
+.navigation-horizontal>* {
     display: inline-block;
-    vertical-align: middle;
-    width: 90%;
 }
 
-.navigation-vertical {
+.navigation-vertical>* {
     display: block;
-}
-
-.navigation-horizontal ul,
-.navigation-vertical ul {
-    list-style-type: none;
-    margin: 0;
-    padding: 0;
-    overflow: hidden;
-    background-color: #333333;
-}
-
-.navigation-horizontal li {
-    float: left;
-}
-
-.navigation-horizontal li a,
-.navigation-vertical li a {
-    display: block;
-    color: white;
-    text-align: center;
-    padding: 16px;
-    text-decoration: none;
-}
-
-.navigation-horizontal li a:hover,
-.navigation-vertical li a:hover {
-    background-color: #111111;
-}
-
-.navigation-horizontal li a.disabled,
-.navigation-vertical li a.disabled {
-    background-color: #333333;
-    color: gray;
-    cursor: default;
-    pointer-events: none;
-    text-decoration: none;
-}
-
-.navigation-horizontal li a.disabled:hover,
-.navigation-vertical li a.disabled:hover {
-    background-color: #333333;
 }

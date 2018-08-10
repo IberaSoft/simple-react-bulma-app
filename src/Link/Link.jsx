@@ -3,9 +3,11 @@ import React from 'react';
 import './Link.css';
 
 const Link = (props) => {
+    let className = "Link";
+    if (props.isActive) className += " is-active";
     return (
-        <a href="" className={`${props.disabled ? 'disabled' : ''}`} title={props.text}>{props.text}</a>
-    );
+        <span className={className} onClick={props.onClick}>{props.children}</span>
+    )
 }
 
-export default Link; 
+export default Link;

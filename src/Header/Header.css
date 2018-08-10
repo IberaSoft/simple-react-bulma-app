@@ -1,21 +1,10 @@
 .header {
-
     background-color: #222;
     color: white;
     grid-area: header;
     height: 170px;
     padding: 20px;
     text-align: center;
-}
-
-.header-title {
-    font-size: 1em;
-}
-
-.header-logo {
-    display: inline-block;
-    vertical-align: middle;
-    width: 7%;
 }
 
 .logo {

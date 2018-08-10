@@ -3,12 +3,10 @@ import Navigation from './../Navigation/Navigation';
 //css
 import './Sidebar.css';
 
-const Sidebar = () => {
-    return (
-        <section className="sidebar">
-            <Navigation className="navigation-vertical" />
-        </section>
-    );
-}
+const Sidebar = (props) => (
+    <section className="sidebar">
+        <Navigation className="navigation-vertical" activeIndex={props.activeIndex} changeIndex={props.changeIndex} />
+    </section>
+)
 
 export default Sidebar;

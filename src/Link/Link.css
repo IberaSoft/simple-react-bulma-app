@@ -1,0 +1,14 @@
+.Link {
+    color: white;
+    text-align: center;
+    padding: 16px;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+.Link.is-active {
+    background-color: #333333;
+    color: gray;
+    cursor: default;
+    pointer-events: none;
+}

@@ -6,12 +6,22 @@ import Footer from './Footer/Footer';
 // Css
 import './App.css';
 class App extends Component {
+  state = {
+    activeIndex: 0
+  }
+
+  changeIndex(newIndex) {
+    this.setState({
+      activeIndex: newIndex
+    })
+  }
+
   render() {
     return (
       <div className="wrapper">
-        <Header />
-        <Sidebar />
-        <Main />
+        <Header activeIndex={this.state.activeIndex} changeIndex={this.changeIndex.bind(this)} />
+        <Sidebar activeIndex={this.state.activeIndex} changeIndex={this.changeIndex.bind(this)} />
+        <Main activeIndex={this.state.activeIndex} />
         <Footer />
       </div>
     );
