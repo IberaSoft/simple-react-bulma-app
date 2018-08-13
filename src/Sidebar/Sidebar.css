@@ -1,4 +1,8 @@
-.sidebar {
-    grid-area: sidebar;
-    background-color: #eee;
+aside.menu {
+    padding-top: 3rem;
+  }
+
+aside.menu .menu-label {
+    padding-left: 10px;
+    font-weight: 700;
 }

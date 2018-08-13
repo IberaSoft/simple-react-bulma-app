@@ -18,10 +18,24 @@ class App extends Component {
 
   render() {
     return (
-      <div className="wrapper">
+      <div>
         <Header activeIndex={this.state.activeIndex} changeIndex={this.changeIndex.bind(this)} />
-        <Sidebar activeIndex={this.state.activeIndex} changeIndex={this.changeIndex.bind(this)} />
-        <Main activeIndex={this.state.activeIndex} />
+
+        <section className="container">
+          <div className="columns">
+            <div className="column is-3">
+
+              <Sidebar activeIndex={this.state.activeIndex} changeIndex={this.changeIndex.bind(this)} />
+
+            </div>
+            <div className="column is-9">
+
+              <Main activeIndex={this.state.activeIndex} />
+
+            </div>
+          </div>
+        </section>
+        
         <Footer />
       </div>
     );

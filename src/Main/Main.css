@@ -1,4 +1,5 @@
-.main {
-    background: lightblue;
-    grid-area: content;
+article.post {
+    margin: 1rem;
+    padding-bottom: 1rem;
+    border-bottom: 1px solid #E6EAEE;
 }

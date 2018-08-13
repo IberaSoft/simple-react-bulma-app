@@ -5,11 +5,13 @@ import Navigation from './../Navigation/Navigation';
 import './Header.css';
 
 const Header = (props) => (
-    <header className="header">
-        <div className="header-logo">
-            <img src={logo} className="logo" alt="logo" />
+    <header className="navbar is-white topNav">
+        <div className="container">
+            <div className="navbar-brand">
+                <img src={logo} className="logo" width="150" height="150" alt="logo" />
+            </div>
+            <Navigation className="navbar-end"  activeIndex={props.activeIndex} changeIndex={props.changeIndex} />
         </div>
-        <Navigation className="navigation-horizontal"  activeIndex={props.activeIndex} changeIndex={props.changeIndex} />
     </header>
 )
 

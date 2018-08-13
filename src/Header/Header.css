@@ -1,10 +1,9 @@
-.header {
-    background-color: #222;
-    color: white;
-    grid-area: header;
-    height: 170px;
-    padding: 20px;
-    text-align: center;
+.topNav {
+    border-top: 5px solid #3498DB;
+  }
+
+.topNav .container {
+    border-bottom: 1px solid #E6EAEE;
 }
 
 .logo {

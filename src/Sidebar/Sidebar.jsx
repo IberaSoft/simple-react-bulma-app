@@ -1,12 +1,11 @@
 import React from 'react';
 import Navigation from './../Navigation/Navigation';
-//css
-import './Sidebar.css';
 
 const Sidebar = (props) => (
-    <section className="sidebar">
-        <Navigation className="navigation-vertical" activeIndex={props.activeIndex} changeIndex={props.changeIndex} />
-    </section>
+    <aside className="menu">
+        <p className="menu-label">Sidebar</p>
+        <Navigation activeIndex={props.activeIndex} changeIndex={props.changeIndex} />
+    </aside>
 )
 
 export default Sidebar;

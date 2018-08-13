@@ -1,10 +1,10 @@
 import React from 'react';
-//css
-import './Footer.css';
 
 const Footer = () => (
     <footer className="footer">
-        Footer
+        <div className="content has-text-centered">
+            <p class="menu-label">Footer</p>
+        </div>
     </footer>
 )
 

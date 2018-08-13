@@ -1,11 +1,11 @@
 import React from 'react';
-//css
-import './Main.css';
 
 const Main = (props) => (
-    <main className="main">
-        The active index is: {props.activeIndex}
-    </main>
+    <div className="box content">
+        <article className="post">
+            The active index is: {props.activeIndex}
+        </article>
+    </div>
 )
 
 export default Main;

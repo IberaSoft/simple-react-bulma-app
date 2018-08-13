@@ -1,9 +1,0 @@
-.footer {
-    align-items: center;
-    background: oldlace;
-    display: flex;
-    grid-area: footer;
-    height: 50px;
-    justify-content: center;
-    width: 100%;
-}
