@@ -1,10 +1,10 @@
 import React from 'react';
 
 const Link = (props) => {
-    let className = "navbar-item";
-    if (props.isActive) className += " is-active";
+    const className = (props.isActive) ? 'is-active' : ''; 
+    
     return (
-        <a className={className} onClick={props.onClick}>{props.children}</a>
+        <a className={`navbar-item ${className}`} onClick={props.onClick}>{props.children}</a>
     )
 }
 
