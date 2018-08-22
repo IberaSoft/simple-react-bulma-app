@@ -1,31 +1,38 @@
 
 import React, { Component } from 'react';
-import TabContent from './TabContent';
-//css
-import './Tabs.css';
 
 class Tabs extends Component {
-    clickTab(index, event) {
-        this.props.clickTab(index);
+    state = {
+        activeIndex: 0
     }
 
+    headerClick = (index) => {
+        if (index !== this.state.activeIndex) this.setState({ activeIndex: index })
+    }
+    
+    headerClass = (index) => (this.state.activeIndex === index ) ? "is-active" : ""
+
     render() {
-        let activeClass = this.props.activeId;
-        let tabsMenu = this.props.tabData.map((item, index) => {
-            return (<li 
-                onClick={this.clickTab.bind(this, index)}
-                className={activeClass === index ? "is-active" : ""}
-                key={index}>
-                    <a>{item.name}</a>
-                </li>)
-        });
+        const { tabsItems } = this.props
+        const { activeIndex } = this.state
       
         return (
             <div>
                 <div className="tabs">
-                    <ul>{tabsMenu}</ul>
+                    <ul>{tabsItems.map((tab, index) =>
+                        <li key={tab.title + index}
+                            onClick={() => this.headerClick(index)}
+                            className={this.headerClass(index)}>
+                            <a>{tab.title}</a>
+                        </li>
+                    )}
+                    </ul>
                 </div>
-                <TabContent tabData={this.props.tabData} activeId={this.props.activeId} />
+                <div className="tab-content">
+                    <div className="tab-pane is-active">
+                        {tabsItems[activeIndex].content}
+                    </div>
+                </div>
             </div>
         );
     }
