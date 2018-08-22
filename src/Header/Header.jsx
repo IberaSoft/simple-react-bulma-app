@@ -10,7 +10,11 @@ const Header = (props) => (
             <div className="navbar-brand">
                 <img src={logo} className="logo" width="150" height="150" alt="logo" />
             </div>
-            <Navigation className="navbar-end" activeIndex={props.activeIndex} changeIndex={props.changeIndex} />
+            <Navigation
+                menuItems={props.menuItems}
+                className="navbar-end"
+                activeIndex={props.activeIndex}
+                changeIndex={props.changeIndex} />
         </div>
     </header>
 )

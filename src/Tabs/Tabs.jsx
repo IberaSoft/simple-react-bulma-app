@@ -9,7 +9,7 @@ class Tabs extends Component {
     headerClick = (index) => {
         if (index !== this.state.activeIndex) this.setState({ activeIndex: index })
     }
-    
+
     headerClass = (index) => (this.state.activeIndex === index ) ? "is-active" : ""
 
     render() {
@@ -19,13 +19,16 @@ class Tabs extends Component {
         return (
             <div>
                 <div className="tabs">
-                    <ul>{tabsItems.map((tab, index) =>
-                        <li key={tab.title + index}
-                            onClick={() => this.headerClick(index)}
-                            className={this.headerClass(index)}>
-                            <a>{tab.title}</a>
-                        </li>
-                    )}
+                    <ul>
+                    { 
+                        tabsItems.map((tab, index) =>
+                            <li key={tab.title + index}
+                                onClick={() => this.headerClick(index)}
+                                className={this.headerClass(index)}>
+                                <a>{tab.title}</a>
+                            </li>
+                        )
+                    }
                     </ul>
                 </div>
                 <div className="tab-content">
