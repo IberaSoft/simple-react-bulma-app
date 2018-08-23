@@ -112,3 +112,17 @@
 .accordions .accordion.is-active .accordion-body {
     max-height: 100em
 }
+
+.accordions .accordion.is-primary {
+    background-color: #f5fffd
+}
+
+.accordions .accordion.is-primary .accordion-header {
+    background-color: #00d1b2;
+    color: #fff
+}
+
+.accordions .accordion.is-primary .accordion-content {
+    border-color: #00d1b2;
+    color: #021310
+}

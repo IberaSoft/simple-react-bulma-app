@@ -4,17 +4,23 @@ import Header from './Header/Header';
 import Notification from './Notification/Notification';
 import Sidebar from './Sidebar/Sidebar';
 import Tabs from './Tabs/Tabs';
-import Accordion from './Accordion/Accordion';
+import AccordionItem from './Accordion/AccordionItem';
 
 // Css
 import './App.css';
 
 class App extends Component {
   state = {
-    activeIndex: 0
+    activeIndex: 0,
+    activeHeader: 1
   }
 
   changeIndex = (newIndex) => this.setState({ activeIndex: newIndex });
+  
+  headerClick = (index) => {
+    if (index !== this.state.activeHeader) this.setState({ activeHeader: index })
+    else this.setState({ activeHeader: -1 })
+  }
 
   menuItems = [
     {title: 'Tabs Demo'},
@@ -31,7 +37,7 @@ class App extends Component {
   ];
 
   render() {
-    const { activeIndex } = this.state
+    const { activeIndex, activeHeader } = this.state
     return (
       <div>
         <Header menuItems={this.menuItems} activeIndex={activeIndex} changeIndex={this.changeIndex} />
@@ -46,8 +52,16 @@ class App extends Component {
             <div className="column is-9">
               <Notification activeIndex={activeIndex} />
               
-              {activeIndex === 0 && <Tabs tabsItems={this.tabsItems} />}
-              {activeIndex === 1 && <Accordion accordionItems={this.tabsItems} />}
+              { activeIndex === 0 && <Tabs tabsItems={this.tabsItems} /> }
+              { activeIndex === 1 && 
+                <section className="accordions">
+                  { 
+                    this.tabsItems.map((acc, index) =>
+                      <AccordionItem key={index} title={acc.title} isActive={activeHeader === index} clickHeader={() => this.headerClick(index)} children={acc.content} />
+                    )
+                  }
+                </section>
+              }
                 
             </div>
           </div>
