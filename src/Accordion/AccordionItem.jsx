@@ -1,7 +1,6 @@
 import React from 'react';
-
-//css
-import './AccordionItem.css';
+import AccordionItemHeader from './AccordionItemHeader';
+import AccordionItemBody from './AccordionItemBody';
 
 const AccordionItem = ({ title, children, isActive, clickHeader }) => {
     let className = "accordion--item accordion--item-primary"
@@ -11,16 +10,13 @@ const AccordionItem = ({ title, children, isActive, clickHeader }) => {
     return (
         <article className={className}>
 
-            <div className="accordion--header" onClick={clickHeader}>
-                <p>{title}</p>
-                <button className="button--toggle"></button>
-            </div>
+            <AccordionItemHeader onClick={clickHeader}>
+                {title}
+            </AccordionItemHeader>
 
-            <div className="accordion--body">
-                <div className="accordion--content">
-                    {children}
-                </div>
-            </div>
+            <AccordionItemBody>
+                {children}
+            </AccordionItemBody>
 
         </article>
     );

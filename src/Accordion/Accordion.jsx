@@ -1,6 +1,9 @@
 import React, { Component } from 'react';
 import AccordionItem from './AccordionItem';
 
+//css
+import './Accordion.css';
+
 class Accordion extends Component {
     state = {
         activeHeader: 1
