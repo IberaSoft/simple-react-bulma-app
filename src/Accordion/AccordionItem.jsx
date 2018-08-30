@@ -1,31 +1,29 @@
 import React from 'react';
 
-// Css
-import './Accordion.css';
+//css
+import './AccordionItem.css';
 
-const AccordionItem = ({ title, children, isActive , clickHeader }) =>  {
-        let className = "accordion is-primary"
+const AccordionItem = ({ title, children, isActive, clickHeader }) => {
+    let className = "accordion--item accordion--item-primary"
 
-        if (isActive) className = `${className} is-active`
+    if (isActive) className = `${className} accordion--item-is-active`
 
-        return (
-            <article className={className}>
+    return (
+        <article className={className}>
 
-                <div className="accordion-header toggle" onClick={clickHeader}>
-                    <p>{title}</p>
-                    <button className="toggle" aria-label="toggle"></button>
+            <div className="accordion--header" onClick={clickHeader}>
+                <p>{title}</p>
+                <button className="button--toggle"></button>
+            </div>
+
+            <div className="accordion--body">
+                <div className="accordion--content">
+                    {children}
                 </div>
+            </div>
 
-                { isActive && 
-                    <div className="accordion-body">
-                        <div className="accordion-content">
-                            {children}
-                        </div>
-                    </div>
-                }
-
-            </article>
-        );
+        </article>
+    );
 }
 
 export default AccordionItem;
