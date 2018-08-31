@@ -18,21 +18,14 @@ class App extends Component {
     activeIndex: newIndex
   });
 
-  menuItems = [{
-      title: 'Tabs'
-    },
-    {
-      title: 'Accordion'
-    },
-    {
-      title: 'Menu 3'
-    },
-    {
-      title: 'Menu 4'
-    },
+  menuItems = [
+    { title: 'Tabs' },
+    { title: 'Accordion' },
+    { title: 'Menu 3' },
+    { title: 'Menu 4' },
   ]
 
-  tabsItems = [{
+  dataItems = [{
       title: 'Tab 1',
       content: <p><strong>Content 1</strong> Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni magnam exercitationem laborum temporibus neque officia fugit, perferendis voluptatum, impedit repudiandae obcaecati animi ipsam. Eos culpa iure minima eum ad.</p >
     },
@@ -69,8 +62,8 @@ class App extends Component {
 
                 <Notification activeIndex={activeIndex} />
                 
-                { activeIndex === 0 && <Tabs tabsItems={this.tabsItems} /> }
-                { activeIndex === 1 && <Accordion tabsItems={this.tabsItems} /> }
+                { activeIndex === 0 && <Tabs tabsItems={this.dataItems} /> }
+                { activeIndex === 1 && <Accordion accordionItems={this.dataItems} /> }
                   
               </div>
             </div>

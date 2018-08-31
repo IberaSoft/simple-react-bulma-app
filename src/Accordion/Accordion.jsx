@@ -6,26 +6,40 @@ import './Accordion.css';
 
 class Accordion extends Component {
     state = {
-        activeHeader: 1
+        active: []
     }
 
     headerClick = (index) => {
-        if (index !== this.state.activeHeader) this.setState({ activeHeader: index })
-        else this.setState({ activeHeader: -1 })
+
+        let { active } = this.state;
+
+        if (active.indexOf(index) !== -1) {
+            this.setState({ active: active.filter(i => i !== index)});
+            return;
+        }
+
+        if (active.length === 3) {
+            active = active.slice(1);
+        }
+
+        this.setState({ active: active.concat(index)} );
+    }
+
+    checkIsActive = (index) => {
+        return this.state.active.indexOf(index) >= 0;
     }
 
     render() {
-        const { tabsItems } = this.props
-        const { activeHeader } = this.state
+        const { accordionItems } = this.props
 
         return (
             <section>
                 {
-                    tabsItems.map((acc, index) =>
+                    accordionItems.map((acc, index) =>
                         <AccordionItem
                             key={index}
                             title={acc.title}
-                            isActive={index === activeHeader}
+                            isActive={this.checkIsActive(index)}
                             clickHeader={() => this.headerClick(index)}
                             children={acc.content}
                         />
