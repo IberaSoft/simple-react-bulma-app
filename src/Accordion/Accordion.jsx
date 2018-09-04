@@ -5,24 +5,31 @@ import AccordionItem from './AccordionItem';
 import './Accordion.css';
 
 class Accordion extends Component {
+    static defaultProps = {
+        limit: 2,
+    }
+
     state = {
-        active: []
+        active: [],
     }
 
     headerClick = (index) => {
 
-        let { active } = this.state;
+        let  active  = [...this.state.active];
+        const positionOfIndex = active.indexOf(index)
 
-        if (active.indexOf(index) !== -1) {
-            this.setState({ active: active.filter(i => i !== index)});
+        if (positionOfIndex !== -1) {
+            active.splice(positionOfIndex, 1)
+            this.setState({ active });
             return;
         }
+        const { limit } = this.props
 
-        if (active.length === 3) {
-            active = active.slice(1);
-        }
+        if (active.length >= limit) active.splice(0, limit);
+        
+        active.push(index);
 
-        this.setState({ active: active.concat(index)} );
+        this.setState({ active } );
     }
 
     checkIsActive = (index) => {
