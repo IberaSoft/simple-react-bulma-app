@@ -1,0 +1,29 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Header component Should match the snapshot 1`] = `
+<header
+  className="navbar is-white topNav"
+>
+  <div
+    className="container"
+  >
+    <div
+      className="navbar-brand"
+    >
+      <img
+        alt="logo"
+        className="logo"
+        height="150"
+        src="logo.svg"
+        width="150"
+      />
+    </div>
+    <Navigation
+      activeIndex={undefined}
+      changeIndex={undefined}
+      className="navbar-end"
+      menuItems={undefined}
+    />
+  </div>
+</header>
+`;

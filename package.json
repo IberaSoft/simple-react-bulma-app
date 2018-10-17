@@ -2,7 +2,7 @@
   "name": "simple-react-bulma-app",
   "version": "0.1.0",
   "private": true,
-  "homepage" : "https://iberasoft.github.io/simple-react-bulma-app/",
+  "homepage": "https://iberasoft.github.io/simple-react-bulma-app/",
   "dependencies": {
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
@@ -15,5 +15,8 @@
     "test": "react-scripts test --env=jsdom",
     "eject": "react-scripts eject",
     "deploy": "gh-pages -d build"
+  },
+  "devDependencies": {
+    "react-test-renderer": "^16.5.2"
   }
 }

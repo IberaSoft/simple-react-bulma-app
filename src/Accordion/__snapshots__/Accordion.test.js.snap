@@ -1,0 +1,54 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Accordion component Should match the snapshot 1`] = `
+<section>
+  <AccordionItem
+    clickHeader={[Function]}
+    isActive={false}
+    title="Accordion 1"
+  >
+    <p>
+      <strong>
+        Content 1
+      </strong>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni magnam exercitationem laborum temporibus neque officia fugit, perferendis voluptatum, impedit repudiandae obcaecati animi ipsam. Eos culpa iure minima eum ad.
+    </p>
+  </AccordionItem>
+  <AccordionItem
+    clickHeader={[Function]}
+    isActive={false}
+    title="Accordion 2"
+  >
+    <p>
+      <strong>
+        Content 2
+      </strong>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni magnam exercitationem laborum temporibus neque officia fugit, perferendis voluptatum, impedit repudiandae obcaecati animi ipsam. Eos culpa iure minima eum ad.
+    </p>
+  </AccordionItem>
+  <AccordionItem
+    clickHeader={[Function]}
+    isActive={false}
+    title="Accordion 3"
+  >
+    <p>
+      <strong>
+        Content 3
+      </strong>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni magnam exercitationem laborum temporibus neque officia fugit, perferendis voluptatum, impedit repudiandae obcaecati animi ipsam. Eos culpa iure minima eum ad.
+    </p>
+  </AccordionItem>
+  <AccordionItem
+    clickHeader={[Function]}
+    isActive={false}
+    title="Accordion 4"
+  >
+    <p>
+      <strong>
+        Content 4
+      </strong>
+       Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni magnam exercitationem laborum temporibus neque officia fugit, perferendis voluptatum, impedit repudiandae obcaecati animi ipsam. Eos culpa iure minima eum ad.
+    </p>
+  </AccordionItem>
+</section>
+`;
