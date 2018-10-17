@@ -5,6 +5,7 @@ import Notification from './Notification/Notification';
 import Sidebar from './Sidebar/Sidebar';
 import Tabs from './Tabs/Tabs';
 import Accordion from './Accordion/Accordion';
+import MyIp from './MyIp/MyIp';
 
 // Css
 import './App.css';
@@ -21,7 +22,7 @@ class App extends Component {
   menuItems = [
     { title: 'Tabs' },
     { title: 'Accordion' },
-    { title: 'Menu 3' },
+    { title: 'My IP' },
     { title: 'Menu 4' },
   ]
 
@@ -64,6 +65,7 @@ class App extends Component {
                 
                 { activeIndex === 0 && <Tabs tabsItems={this.dataItems} /> }
                 { activeIndex === 1 && <Accordion accordionItems={this.dataItems} /> }
+                { activeIndex === 2 && <MyIp activeIndex={activeIndex} /> }
                   
               </div>
             </div>
