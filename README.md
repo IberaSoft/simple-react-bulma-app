@@ -1,5 +1,6 @@
 # Simple-React-Bulma-App
 
+[![Codacy Badge](https://api.codacy.com/project/badge/Grade/be886548e8a34e7eb95d937a0f9197be)](https://app.codacy.com/app/IberaSoft/simple-react-bulma-app?utm_source=github.com&utm_medium=referral&utm_content=IberaSoft/simple-react-bulma-app&utm_campaign=Badge_Grade_Settings)
 [![Awesome](https://cdn.rawgit.com/sindresorhus/awesome/d7305f38d29fed78fa85652e3a63e154dd8e8829/media/badge.svg)](https://github.com/enaqx/awesome-react)
 
 > UI Components examples made with ReactJS and Bulma.
