@@ -65,7 +65,7 @@ class App extends Component {
                 
                 { activeIndex === 0 && <Tabs tabsItems={this.dataItems} /> }
                 { activeIndex === 1 && <Accordion accordionItems={this.dataItems} /> }
-                { activeIndex === 2 && <MyIp activeIndex={activeIndex} /> }
+                { activeIndex === 2 && <MyIp /> }
                   
               </div>
             </div>

@@ -1,15 +1,7 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
 exports[`MyIp component Should match the snapshot 1`] = `
-<div
-  className="notification is-warning "
->
-  <button
-    className="delete"
-    onClick={[Function]}
-  />
-  <p>
-    Loading...
-  </p>
-</div>
+<WidthIP>
+  [Function]
+</WidthIP>
 `;

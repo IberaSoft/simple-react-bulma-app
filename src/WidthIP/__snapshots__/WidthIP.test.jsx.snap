@@ -1,15 +1,15 @@
 // Jest Snapshot v1, https://goo.gl/fbAQLP
 
-exports[`Notification component Should match the snapshot 1`] = `
+exports[`WidthIP component Should match the snapshot 1`] = `
 <div
-  className="notification is-info "
+  className="notification is-warning "
 >
   <button
     className="delete"
     onClick={[Function]}
   />
   <p>
-    The active index is: 
+    Loading ip...
   </p>
 </div>
 `;
