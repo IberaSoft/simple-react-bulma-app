@@ -27,12 +27,11 @@ class WidthIP extends Component {
     }
 
     render() {
-        const { ip } = this.state;
-        console.log('PATATA: ', this.props)
+        const { ip, isHidden } = this.state;
         return (
-            <div className={`notification is-warning ${(this.state.isHidden === true ) ? 'is-hidden' : ''}`}>
+            <div className={`notification is-warning ${(isHidden === true ) ? 'is-hidden' : ''}`}>
                 <button className="delete" onClick={() => this.handleClick(true)}></button>
-                { ip ? <p>Your IP is: {this.props.children(ip)}</p> : <p>Loading ip...</p> }
+                { ip ? <span>Your IP is: {this.props.children(ip)}</span> : <span>Loading ip...</span> }
             </div>
         )
     }

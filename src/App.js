@@ -5,7 +5,7 @@ import Notification from './Notification/Notification';
 import Sidebar from './Sidebar/Sidebar';
 import Tabs from './Tabs/Tabs';
 import Accordion from './Accordion/Accordion';
-import MyIp from './MyIp/MyIp';
+import { IPProvider, IPConsumer } from './IPContext/IPContext';
 
 // Css
 import './App.css';
@@ -48,7 +48,7 @@ class App extends Component {
       const { activeIndex } = this.state
 
       return (
-        <div>
+        <IPProvider>
 
           <Header menuItems={this.menuItems} activeIndex={activeIndex} changeIndex={this.changeIndex} />
   
@@ -65,7 +65,17 @@ class App extends Component {
                 
                 { activeIndex === 0 && <Tabs tabsItems={this.dataItems} /> }
                 { activeIndex === 1 && <Accordion accordionItems={this.dataItems} /> }
-                { activeIndex === 2 && <MyIp /> }
+                { activeIndex === 2 && 
+                  <IPConsumer>
+											{(context) => (
+                        <div className="field">
+                            <div className="control">
+                                <input className="input is-info" type="text" placeholder="Loading input" defaultValue={context.ip} />
+                            </div>
+                        </div>
+											)}
+									</IPConsumer>
+                }
                   
               </div>
             </div>
@@ -73,7 +83,7 @@ class App extends Component {
           
           <Footer />
 
-        </div>
+        </IPProvider>
       );
   }
 }
