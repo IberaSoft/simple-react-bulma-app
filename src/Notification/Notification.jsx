@@ -10,12 +10,12 @@ class Notification extends Component {
     }
 
     render() {
-        const { activeIndex } = this.props
+        const { selectedMenuItems } = this.props
 
         return (
             <div className={`notification is-info ${(this.state.isHidden === true ) ? 'is-hidden' : ''}`}>
                 <button className="delete" onClick={() => this.handleClick(true)}></button>
-                <p>The active index is: {activeIndex}</p>
+                <p>The active index is: {selectedMenuItems}</p>
             </div>
         )
     }
