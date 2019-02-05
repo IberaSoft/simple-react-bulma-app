@@ -7,7 +7,10 @@
     "gh-pages": "^1.2.0",
     "react": "^16.4.2",
     "react-dom": "^16.4.2",
-    "react-scripts": "1.1.4"
+    "react-redux": "^5.1.1",
+    "react-scripts": "1.1.4",
+    "redux": "^4.0.1",
+    "webpack-dev-server": ">=3.1.11"
   },
   "scripts": {
     "start": "react-scripts start",
