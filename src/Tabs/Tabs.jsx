@@ -25,6 +25,7 @@ class Tabs extends Component {
                             <li key={tab.title + index}
                                 onClick={() => this.headerClick(index)}
                                 className={this.headerClass(index)}>
+                                {/*eslint-disable-next-line*/}
                                 <a>{tab.title}</a>
                             </li>
                         )

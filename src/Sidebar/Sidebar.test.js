@@ -1,7 +1,7 @@
 import React from 'react'
 import Sidebar from './Sidebar'
 import ShallowRenderer from 'react-test-renderer/shallow';
-import { menuItems } from './data';
+import { menuItems } from './../data';
 
 describe('Sidebar component', () => {
     it('Should match the snapshot', () => {

@@ -1,0 +1,53 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Tabs component Should match the snapshot 1`] = `
+<div>
+  <div
+    className="tabs"
+  >
+    <ul>
+      <li
+        className="is-active"
+        onClick={[Function]}
+      >
+        <a>
+          Tab 1
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a>
+          Tab 2
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a>
+          Tab 3
+        </a>
+      </li>
+      <li
+        className=""
+        onClick={[Function]}
+      >
+        <a>
+          Tab 4
+        </a>
+      </li>
+    </ul>
+  </div>
+  <div
+    className="tab-content"
+  >
+    <div
+      className="tab-pane is-active"
+    >
+      CONTENT 1 Lorem ipsum dolor sit amet consectetur adipisicing elit. Tempore magni magnam exercitationem laborum temporibus neque officia fugit, perferendis voluptatum, impedit repudiandae obcaecati animi ipsam. Eos culpa iure minima eum ad.
+    </div>
+  </div>
+</div>
+`;
