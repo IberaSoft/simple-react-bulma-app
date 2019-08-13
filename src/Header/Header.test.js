@@ -1,7 +1,7 @@
 import React from 'react'
 import Header from './Header'
 import ShallowRenderer from 'react-test-renderer/shallow';
-import { menuItems } from './data';
+import { menuItems } from './../data';
 
 describe('Header component', () => {
     it('Should match the snapshot', () => {

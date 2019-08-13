@@ -1,7 +1,7 @@
 import React from 'react'
 import Tabs from './Tabs'
 import ShallowRenderer from 'react-test-renderer/shallow';
-import { dataItems } from './data';
+import { dataItems } from './../data';
 
 describe('Tabs component', () => {
     it('Should match the snapshot', () => {

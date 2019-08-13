@@ -1,0 +1,31 @@
+// Jest Snapshot v1, https://goo.gl/fbAQLP
+
+exports[`Sidebar component Should match the snapshot 1`] = `
+<aside
+  className="menu"
+>
+  <p
+    className="menu-label"
+  >
+    Sidebar
+  </p>
+  <Menu
+    menuItems={
+      Array [
+        Object {
+          "title": "Tabs",
+        },
+        Object {
+          "title": "Accordion",
+        },
+        Object {
+          "title": "My IP",
+        },
+        Object {
+          "title": "Menu 4",
+        },
+      ]
+    }
+  />
+</aside>
+`;

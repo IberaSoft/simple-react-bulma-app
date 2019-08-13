@@ -8,8 +8,8 @@ exports[`WidthIP component Should match the snapshot 1`] = `
     className="delete"
     onClick={[Function]}
   />
-  <p>
+  <span>
     Loading ip...
-  </p>
+  </span>
 </div>
 `;
