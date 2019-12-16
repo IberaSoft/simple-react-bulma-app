@@ -1,7 +1,23 @@
 {
-  "main.css": "static/css/main.b41661bf.css",
-  "main.css.map": "static/css/main.b41661bf.css.map",
-  "main.js": "static/js/main.2a345b4f.js",
-  "main.js.map": "static/js/main.2a345b4f.js.map",
-  "static/media/logo.svg": "static/media/logo.ee7cd8ed.svg"
+  "files": {
+    "main.css": "/simple-react-bulma-app/static/css/main.53020a54.chunk.css",
+    "main.js": "/simple-react-bulma-app/static/js/main.60066949.chunk.js",
+    "main.js.map": "/simple-react-bulma-app/static/js/main.60066949.chunk.js.map",
+    "runtime-main.js": "/simple-react-bulma-app/static/js/runtime-main.2369da31.js",
+    "runtime-main.js.map": "/simple-react-bulma-app/static/js/runtime-main.2369da31.js.map",
+    "static/js/2.35fdb4e5.chunk.js": "/simple-react-bulma-app/static/js/2.35fdb4e5.chunk.js",
+    "static/js/2.35fdb4e5.chunk.js.map": "/simple-react-bulma-app/static/js/2.35fdb4e5.chunk.js.map",
+    "index.html": "/simple-react-bulma-app/index.html",
+    "precache-manifest.8c899294ce335f1a3c807f0354c18cfc.js": "/simple-react-bulma-app/precache-manifest.8c899294ce335f1a3c807f0354c18cfc.js",
+    "service-worker.js": "/simple-react-bulma-app/service-worker.js",
+    "static/css/main.53020a54.chunk.css.map": "/simple-react-bulma-app/static/css/main.53020a54.chunk.css.map",
+    "static/js/2.35fdb4e5.chunk.js.LICENSE": "/simple-react-bulma-app/static/js/2.35fdb4e5.chunk.js.LICENSE",
+    "static/media/logo.svg": "/simple-react-bulma-app/static/media/logo.5d5d9eef.svg"
+  },
+  "entrypoints": [
+    "static/js/runtime-main.2369da31.js",
+    "static/js/2.35fdb4e5.chunk.js",
+    "static/css/main.53020a54.chunk.css",
+    "static/js/main.60066949.chunk.js"
+  ]
 }
