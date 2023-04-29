@@ -24,7 +24,7 @@
     "enzyme-adapter-react-16": "^1.14.0",
     "react-test-render": "^1.1.2",
     "react-test-renderer": "^16.5.2",
-    "npm": ">=6.13.4"
+    "npm": ">=9.6.5"
   },
   "browserslist": {
     "production": [
